@@ -5,6 +5,7 @@
 <web-app>
   <display-name>elasticsearch</display-name>
 
+  <!--
   <filter>
     <filter-name>CorsFilter</filter-name>
     <filter-class>org.apache.catalina.filters.CorsFilter</filter-class>
@@ -14,6 +15,7 @@
     <filter-name>CorsFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  -->
 
   <servlet>
     <servlet-name>node</servlet-name>
@@ -21,9 +23,11 @@
     <load-on-startup>1</load-on-startup>
   </servlet>
 
+  <!--
   <servlet-mapping>
     <servlet-name>node</servlet-name>
     <url-pattern>/*</url-pattern>
   </servlet-mapping>
+  -->
 
 </web-app>

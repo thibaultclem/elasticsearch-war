@@ -19,4 +19,25 @@ node.master: true
 node.data: true
 # Path to directory where to store index data allocated for this node.
 #
-path.data: gatein/data/es
+path.data: es/data
+# Path to where plugins are installed:
+#
+path.plugins: es/plugins
+
+
+############################## Network And HTTP ###############################
+
+# Enabled HTTP completely:
+#
+http.enabled: true
+
+
+############################## HTTP Basic auth for ElasticSearch ###############################
+# see https://github.com/Asquera/elasticsearch-http-basic
+# True disables the default ES HTTP Transport module
+http.basic.enabled: true
+http.basic.user: root
+http.basic.password: gtn
+# If set to false no ip will be whitelisted. Uses Host Name Resolution from java.net.InetAddress
+# Default value ["localhost", "127.0.0.1"]
+http.basic.ipwhitelist: ["localhost", "127.0.0.1"]
